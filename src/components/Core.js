@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+import { Grid } from '@mui/material'
+
+import NavMenu from './NavMenu'
 import Welcome from './Welcome'
 
 
@@ -13,7 +16,15 @@ function Core() {
 
 	  case 0:
 	    return (
-	    		<Welcome />
+	    	<>
+	    		<Grid container>
+		    		<NavMenu
+		    			step={step}
+		    			setStep={step => setStep(step)}
+		    		/>
+		    		<Welcome />
+		    	</Grid>
+	    	</>
 	      )
 	}
 

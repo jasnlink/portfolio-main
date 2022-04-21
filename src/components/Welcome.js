@@ -47,6 +47,8 @@ import {
 
 import { LoadingButton } from '@mui/lab';
 
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+
 import '../index.css';
 
 
@@ -55,34 +57,6 @@ function Welcome() {
 	return (
 	<>
 
-		<Grid container>
-			<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'auto' }}>
-				<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414', borderRight: 'solid #c3c3c33d 1px' }} elevation={0} square>
-					<List>
-						<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px' }}>
-							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Navigation</Typography>} />
-						</ListItem>
-						<ListItemButton>
-							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '200', color: '#eeeeef' }}>Navigation</Typography>} />
-						</ListItemButton>
-						<ListItemButton>
-							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '200', color: '#eeeeef' }}>Navigation</Typography>} />
-						</ListItemButton>
-						<ListItemButton>
-							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '200', color: '#eeeeef' }}>Navigation</Typography>} />
-						</ListItemButton>
-						<ListItemButton>
-							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '200', color: '#eeeeef' }}>Navigation</Typography>} />
-						</ListItemButton>
-						<ListItemButton>
-							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '200', color: '#eeeeef' }}>Navigation</Typography>} />
-						</ListItemButton>
-						<ListItemButton>
-							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '200', color: '#eeeeef' }}>Navigation</Typography>} />
-						</ListItemButton>
-					</List>
-				</Paper>
-			</Grid>
 			<Grid item xs={10} style={{ maxHeight: '100vh', overflow: 'auto' }}>
 				<Container sx={{ backgroundColor: '#141414', pt: '12vh' }}>
 					<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414' }} elevation={0} square>
@@ -107,7 +81,6 @@ function Welcome() {
 					</Paper>
 				</Container>
 			</Grid>
-		</Grid>
 
 	</>
 	)
