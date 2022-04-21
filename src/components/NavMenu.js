@@ -42,7 +42,8 @@ import {
 	Card,
 	CardActionArea,
 	Stack,
-	SvgIcon
+	SvgIcon,
+	Link
  } from '@mui/material';
 
 import { LoadingButton } from '@mui/lab';
@@ -97,69 +98,75 @@ function NavMenu({ step, setStep }) {
 						<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Connect with me</Typography>} />
 					</ListItem>
 
-						<ListItemButton 
-							sx={{ pl: 3 }}
-							disableRipple 
-							classes={{ root: 'nav-root' }}
-						>
-							<ListItemText primary={
-									<>
-										<Grid container spacing={1}>
-											<Grid item xs={6}>
-												<Typography>
-													Github
-												</Typography>
+						<Link href="https://github.com/jasnlink/" underline="none" target="_blank">
+							<ListItemButton 
+								sx={{ pl: 3 }}
+								disableRipple 
+								classes={{ root: 'nav-root' }}
+							>
+								<ListItemText primary={
+										<>
+											<Grid container spacing={1}>
+												<Grid item xs={6}>
+													<Typography>
+														Github
+													</Typography>
+												</Grid>
+												<Grid item xs={6}>
+													<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
+												</Grid>
 											</Grid>
-											<Grid item xs={6}>
-												<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
-											</Grid>
-										</Grid>
-									</>
-								} />
+										</>
+									} />
 
-						</ListItemButton>
-						<ListItemButton 
-							sx={{ pl: 3 }}
-							disableRipple 
-							classes={{ root: 'nav-root' }}
-						>
-							<ListItemText primary={
-									<>
-										<Grid container spacing={1}>
-											<Grid item xs={6}>
-												<Typography>
-													LinkedIn
-												</Typography>
+							</ListItemButton>
+						</Link>
+						<Link href="https://www.linkedin.com/in/jason-che-22612222a/" underline="none" target="_blank">
+							<ListItemButton 
+								sx={{ pl: 3 }}
+								disableRipple 
+								classes={{ root: 'nav-root' }}
+							>
+								<ListItemText primary={
+										<>
+											<Grid container spacing={1}>
+												<Grid item xs={6}>
+													<Typography>
+														LinkedIn
+													</Typography>
+												</Grid>
+												<Grid item xs={6}>
+													<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
+												</Grid>
 											</Grid>
-											<Grid item xs={6}>
-												<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
+										</>
+									} />
+									
+							</ListItemButton>
+						</Link>
+						<Link href="https://twitter.com/jasnlink" underline="none" target="_blank">
+							<ListItemButton 
+								sx={{ pl: 3 }}
+								disableRipple 
+								classes={{ root: 'nav-root' }}
+							>
+								<ListItemText primary={
+										<>
+											<Grid container spacing={1}>
+												<Grid item xs={6}>
+													<Typography>
+														Twitter
+													</Typography>
+												</Grid>
+												<Grid item xs={6}>
+													<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
+												</Grid>
 											</Grid>
-										</Grid>
-									</>
-								} />
-								
-						</ListItemButton>
-						<ListItemButton 
-							sx={{ pl: 3 }}
-							disableRipple 
-							classes={{ root: 'nav-root' }}
-						>
-							<ListItemText primary={
-									<>
-										<Grid container spacing={1}>
-											<Grid item xs={6}>
-												<Typography>
-													Twitter
-												</Typography>
-											</Grid>
-											<Grid item xs={6}>
-												<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
-											</Grid>
-										</Grid>
-									</>
-								} />
-								
-						</ListItemButton>
+										</>
+									} />
+									
+							</ListItemButton>
+						</Link>
 
 				</List>
 			</Paper>
