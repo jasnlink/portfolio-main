@@ -51,6 +51,42 @@ function Core() {
 		    	</Grid>
 	    	</>
 	      )
+	  case 3:
+	    return (
+	    	<>
+	    		<Grid container>
+		    		<NavMenu
+		    			step={step}
+		    			setStep={step => setStep(step)}
+		    		/>
+		    		<Project id={3} />
+		    	</Grid>
+	    	</>
+	      )
+	  case 4:
+	    return (
+	    	<>
+	    		<Grid container>
+		    		<NavMenu
+		    			step={step}
+		    			setStep={step => setStep(step)}
+		    		/>
+		    		<Project id={4} />
+		    	</Grid>
+	    	</>
+	      )
+	  case 5:
+	    return (
+	    	<>
+	    		<Grid container>
+		    		<NavMenu
+		    			step={step}
+		    			setStep={step => setStep(step)}
+		    		/>
+		    		<Project id={5} />
+		    	</Grid>
+	    	</>
+	      )
 	}
 
 }

@@ -61,7 +61,7 @@ function NavMenu({ step, setStep }) {
 			<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
 				<List>
 					<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px', cursor: 'default' }}>
-						<ListItemText primary={<Typography variant="h5">Navigation</Typography>} />
+						<ListItemText primary={<Typography variant="h4">NAVIGATION</Typography>} />
 					</ListItem>
 					<ListItemButton
 						selected={step === 0}
@@ -82,7 +82,7 @@ function NavMenu({ step, setStep }) {
 							classes={step ===1 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 							disableRipple 
 						>
-							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit">Tableside scan to order</Typography>} />
+							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MealPortal</strong> - Online pickup, delivery ordering software</Typography>} />
 						</ListItemButton>
 						<ListItemButton 
 							sx={{ pl: 3, color: '#c7c7c7'  }} 
@@ -91,7 +91,34 @@ function NavMenu({ step, setStep }) {
 							classes={step ===2 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 							disableRipple 
 						>
-							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit">Restaurant pickup and delivery</Typography>} />
+							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>FoodHub</strong> - Restaurant tableside scan to order system</Typography>} />
+						</ListItemButton>
+						<ListItemButton 
+							sx={{ pl: 3, color: '#c7c7c7'  }} 
+							selected={step === 3}
+							onClick={() => setStep(3)}
+							classes={step ===3 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+							disableRipple 
+						>
+							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>SimpleMenu</strong> - Interactive menu with order management for pickups</Typography>} />
+						</ListItemButton>
+						<ListItemButton 
+							sx={{ pl: 3, color: '#c7c7c7'  }} 
+							selected={step === 4}
+							onClick={() => setStep(4)}
+							classes={step ===4 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+							disableRipple 
+						>
+							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MSM Technologies</strong> - Web development company</Typography>} />
+						</ListItemButton>
+						<ListItemButton 
+							sx={{ pl: 3, color: '#c7c7c7'  }} 
+							selected={step === 5}
+							onClick={() => setStep(5)}
+							classes={step ===5 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+							disableRipple 
+						>
+							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>PrimeElo</strong> - Rank boosting service for League of Legends</Typography>} />
 						</ListItemButton>
 
 					<ListItem sx={{ pb: 0, cursor: 'default' }}>
