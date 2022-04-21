@@ -57,20 +57,20 @@ function NavMenu({ step, setStep }) {
 	return (
 	<>
 		<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'auto' }}>
-			<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414', borderRight: 'solid #c3c3c33d 1px' }} elevation={0} square>
+			<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
 				<List>
 					<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px' }}>
-						<ListItemText primary={<Typography variant="h5" style={{ fontWeight: '200', color: '#eeeeef' }}>Navigation</Typography>} />
+						<ListItemText primary={<Typography variant="h5">Navigation</Typography>} />
 					</ListItem>
 					<ListItemButton
 						selected={step === 0}
 						classes={{ selected: 'nav-selected' }}
 					>
-						<ListItemText primary={<Typography variant="h6" sx={{ fontWeight: '500', color: '#eeeeef' }}>Home</Typography>} />
+						<ListItemText primary={<Typography variant="h6">Home</Typography>} />
 					</ListItemButton>
-					<ListItemButton sx={{ pb: 0 }}>
+					<ListItem sx={{ pb: 0 }}>
 						<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Projects</Typography>} />
-					</ListItemButton>
+					</ListItem>
 
 						<ListItemButton 
 							sx={{ pl: 3 }} 
@@ -83,9 +83,9 @@ function NavMenu({ step, setStep }) {
 							<ListItemText primary="Pickup and delivery ordering system" />
 						</ListItemButton>
 
-					<ListItemButton sx={{ pb: 0 }}>
+					<ListItem sx={{ pb: 0 }}>
 						<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Connect with me</Typography>} />
-					</ListItemButton>
+					</ListItem>
 
 						<ListItemButton 
 							sx={{ pl: 3 }}

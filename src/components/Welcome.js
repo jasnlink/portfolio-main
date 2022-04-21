@@ -57,8 +57,8 @@ function Welcome() {
 	return (
 	<>
 
-			<Grid item xs={10} style={{ maxHeight: '100vh', overflow: 'auto' }}>
-				<Container sx={{ backgroundColor: '#141414', pt: '12vh' }}>
+			<Grid item xs={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
+				<Container sx={{ pt: '12vh' }}>
 					<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414' }} elevation={0} square>
 						<Stack spacing={4}>
 							<Card sx={{ backgroundColor: '#141414', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '18px' }} square>
