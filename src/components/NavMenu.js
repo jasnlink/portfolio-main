@@ -59,36 +59,48 @@ function NavMenu({ step, setStep }) {
 		<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'auto' }}>
 			<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
 				<List>
-					<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px' }}>
+					<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px', cursor: 'default' }}>
 						<ListItemText primary={<Typography variant="h5">Navigation</Typography>} />
 					</ListItem>
 					<ListItemButton
 						selected={step === 0}
-						classes={{ selected: 'nav-selected' }}
+						onClick={() => setStep(0)}
+						classes={step ===0 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+						disableRipple 
 					>
 						<ListItemText primary={<Typography variant="h6">Home</Typography>} />
 					</ListItemButton>
-					<ListItem sx={{ pb: 0 }}>
+					<ListItem sx={{ pb: 0, cursor: 'default' }}>
 						<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Projects</Typography>} />
 					</ListItem>
 
 						<ListItemButton 
-							sx={{ pl: 3 }} 
+							sx={{ pl: 3, color: '#c7c7c7'  }} 
+							selected={step === 1}
+							onClick={() => setStep(1)}
+							classes={step ===1 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+							disableRipple 
 						>
-							<ListItemText primary="Tableside scan to order system" />
+							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit">Tableside scan to order</Typography>} />
 						</ListItemButton>
 						<ListItemButton 
-							sx={{ pl: 3 }} 
+							sx={{ pl: 3, color: '#c7c7c7'  }} 
+							selected={step === 2}
+							onClick={() => setStep(2)}
+							classes={step ===2 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+							disableRipple 
 						>
-							<ListItemText primary="Pickup and delivery ordering system" />
+							<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit">Restaurant pickup and delivery</Typography>} />
 						</ListItemButton>
 
-					<ListItem sx={{ pb: 0 }}>
+					<ListItem sx={{ pb: 0, cursor: 'default' }}>
 						<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Connect with me</Typography>} />
 					</ListItem>
 
 						<ListItemButton 
 							sx={{ pl: 3 }}
+							disableRipple 
+							classes={{ root: 'nav-root' }}
 						>
 							<ListItemText primary={
 									<>
@@ -108,6 +120,8 @@ function NavMenu({ step, setStep }) {
 						</ListItemButton>
 						<ListItemButton 
 							sx={{ pl: 3 }}
+							disableRipple 
+							classes={{ root: 'nav-root' }}
 						>
 							<ListItemText primary={
 									<>
@@ -127,6 +141,8 @@ function NavMenu({ step, setStep }) {
 						</ListItemButton>
 						<ListItemButton 
 							sx={{ pl: 3 }}
+							disableRipple 
+							classes={{ root: 'nav-root' }}
 						>
 							<ListItemText primary={
 									<>

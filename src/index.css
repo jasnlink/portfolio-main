@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  color: #eeeeef !important;
+  color: #c7c7c7 !important;
 }
 
 h6, h5 {
@@ -15,4 +15,8 @@ h6, h5 {
 .nav-selected {
   color: #141414 !important;
   background-color: #eeeeef !important;
+}
+
+.nav-root:hover {
+  background-color: #b5b5b51c !important;
 }

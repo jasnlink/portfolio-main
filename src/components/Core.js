@@ -4,6 +4,7 @@ import { Grid } from '@mui/material'
 
 import NavMenu from './NavMenu'
 import Welcome from './Welcome'
+import Project from './Project'
 
 
 function Core() {
@@ -23,6 +24,30 @@ function Core() {
 		    			setStep={step => setStep(step)}
 		    		/>
 		    		<Welcome />
+		    	</Grid>
+	    	</>
+	      )
+	  case 1:
+	    return (
+	    	<>
+	    		<Grid container>
+		    		<NavMenu
+		    			step={step}
+		    			setStep={step => setStep(step)}
+		    		/>
+		    		<Project id={1} />
+		    	</Grid>
+	    	</>
+	      )
+	  case 2:
+	    return (
+	    	<>
+	    		<Grid container>
+		    		<NavMenu
+		    			step={step}
+		    			setStep={step => setStep(step)}
+		    		/>
+		    		<Project id={2} />
 		    	</Grid>
 	    	</>
 	      )
