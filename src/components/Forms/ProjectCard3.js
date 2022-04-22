@@ -71,7 +71,8 @@ function ProjectCard3() {
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/8.jpg" alt="msmtech" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/3-2.jpg" alt="menu" direction="vertical" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/4.jpg" alt="menu" direction="vertical" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ fontSize: '20px', mt: '20px' }}>
@@ -80,7 +81,7 @@ function ProjectCard3() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							I needed a way to advertise my web development services online.
+							The client needed a way to let their customers browse their menu online.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -90,7 +91,9 @@ function ProjectCard3() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							This website describes the services I offer while giving the prospecting customer different ways to contact me.
+							This app lets customers browse through the restaurant's menu and see what they have.
+							Customers get a summary of what they want to order that they can show to the cashier via a QR code. 
+							This works well when the customer wants to start an order but the cashier is busy while also not letting the customer directly place an order either.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -104,13 +107,21 @@ function ProjectCard3() {
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/3-1.jpg" alt="message" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/5.jpg" alt="menu" direction="vertical" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/6-1.jpg" alt="menu" direction="vertical" />
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/6.jpg" alt="message" />
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
+							Customers get an order summary and a QR code that they present to the cashier.
+						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/8-1.jpg" alt="message" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/11.jpg" alt="message" />
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
+							Management backend to allow the staff to make changes to the menu.
+						</Typography>
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ fontSize: '20px', mt: '20px' }}>
