@@ -59,8 +59,8 @@ function Welcome() {
 	return (
 	<>
 
-			<Grid item xs={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
-				<Container maxWidth="sm" sx={{ pt: '8vh' }}>
+			<Grid item sm={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
+				<Container maxWidth="sm" sx={{ pt: '12vh', pb: '12vh' }}>
 					<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414' }} elevation={0} square>
 							<Card sx={{ backgroundColor: '#141414', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 10%' }} square>
 								<Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
@@ -83,7 +83,7 @@ function Welcome() {
 									</Grid>
 									<Grid item xs={12}>
 										<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
-											My focus is on product vision, connecting frontend with backend technologies together, and UI/UX design.
+											My focus is on product vision, connecting frontend with backend technologies, and UI/UX design.
 										</Typography>
 									</Grid>
 									<Grid item xs={12}>
@@ -102,7 +102,7 @@ function Welcome() {
 									</Grid>
 									<Grid item xs={12} sx={{ mt: 2 }}>
 										<Link href="https://msmtech.ca/wp-content/uploads/2022/04/Jason-Man-Xing-Che_CV-en-v8.pdf" underline="none" target="_blank">
-											<Button className="btn" disableRipple>
+											<Button className="btn" disableRipple fullWidth>
 												See my resume
 											</Button>
 										</Link>
