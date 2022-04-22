@@ -55,7 +55,7 @@ import '../../index.css';
 
 import Image from './Image'
 
-function ProjectCard5() {
+function ProjectCard1() {
 
 	const theme = useTheme()
 	const desktopMode = useMediaQuery(theme.breakpoints.up('sm'))
@@ -67,11 +67,11 @@ function ProjectCard5() {
 				<Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ mb: '20px' }}>
-							PrimeElo - 2015
+							MealPortal - 2022
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/1.jpg" alt="PrimeElo" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/8.jpg" alt="msmtech" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ fontSize: '20px', mt: '20px' }}>
@@ -80,7 +80,7 @@ function ProjectCard5() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Players needed a way to rank up with as little effort as possible.
+							I needed a way to advertise my web development services online.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -90,8 +90,7 @@ function ProjectCard5() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							This platform allows players that want their ranks to be boosted to book an agent to do it for them.
-							On the other end, highly skilled players that want to monetise their abilities can sign up and be paid to play.
+							This website describes the services I offer while giving the prospecting customer different ways to contact me.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -100,22 +99,18 @@ function ProjectCard5() {
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
-							I needed to make the website look more trustworthy, so I connected with Facebook and Twitter API to display the number of likes/followers.
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
+							I needed hosting that was fast and reliable, I decided to provision a VPS and install my own LAMP stack and installed Wordpress.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Typography variant="body1" sx={{ fontSize: '20px' }}>
-							I needed a way to let users follow on the progress of the order, so I used PHP to fetch the Riot Games API to see data on the current match being played and the current rank of the user. 
-						</Typography>
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/3-1.jpg" alt="message" />
 					</Grid>
 					<Grid item xs={12}>
-						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px' }}>
-							I needed to reflect the chosen ranks in realtime while also preventing users from choosing a lower desired rank. I used Javascript to calculate the current rank and the desired rank. I used jQuery to fetch realtime prices from my database.
-						</Typography>
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/6.jpg" alt="message" />
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/2.jpg" alt="Features" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/8-1.jpg" alt="message" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ fontSize: '20px', mt: '20px' }}>
@@ -124,26 +119,11 @@ function ProjectCard5() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Javascript, jQuery, mySQL, HTML, CSS, PHP
+							Javascript, MySQL, HTML, CSS, PHP, Wordpress, Apache, Linux
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Typography variant="h3" sx={{ fontSize: '20px', mt: '20px' }}>
-							Features
-						</Typography>
-						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px'}}>
-							<ul style={{ paddingTop: 0 }}>
-								<li>Real time order monitoring</li>
-								<li>Secure login authentication</li>
-								<li>Email contact form</li>
-								<li>Fast and secure Paypal Checkout</li>
-								<li>Agent job board for new orders</li>
-								<li>Intuitive rank selection</li>
-							</ul>
-						</Typography>
-					</Grid>
-					<Grid item xs={12}>
-						<Link href="https://primeelo.msmtech.ca" underline="none" target="_blank">
+						<Link href="https://msmtech.ca" underline="none" target="_blank">
 							<Button className="btn" fullWidth={!desktopMode} disableRipple>
 								See live demo
 							</Button>
@@ -156,4 +136,4 @@ function ProjectCard5() {
 	)
 
 }
-export default ProjectCard5;
+export default ProjectCard1;
