@@ -78,7 +78,7 @@ function Welcome() {
 									</Grid>
 									<Grid item xs={12}>
 										<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
-											I am a <strong>full stack web software developer</strong> with a specialization in <strong>Javascript and React</strong>.
+											I am a <strong class="p-strong">full stack web software developer</strong> with a specialization in <strong class="p-strong">Javascript and React</strong>.
 										</Typography>
 									</Grid>
 									<Grid item xs={12}>
@@ -101,7 +101,7 @@ function Welcome() {
 										</List>
 									</Grid>
 									<Grid item xs={12} sx={{ mt: 2 }}>
-										<Link href="https://msmtech.ca/wp-content/uploads/2022/04/Jason-Man-Xing-Che_CV-en-v8.pdf" underline="none" target="_blank">
+										<Link href="https://msmtech.ca/wp-content/uploads/2022/04/Jason-Man-Xing-Che_CV-en-v9.pdf" underline="none" target="_blank">
 											<Button className="btn" disableRipple fullWidth>
 												See my resume
 											</Button>

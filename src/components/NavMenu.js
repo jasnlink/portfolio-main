@@ -219,7 +219,7 @@ function NavMenu({ step, setStep }) {
 		{!desktopMode && (
 		<>
 			{!navOpen && (
-				<ButtonBase onClick={open => setNavOpen(true)} sx={{ position: 'absolute', right: 16, top: 16, width: '52px', height: '52px', color: '#eeeeef', background: 'none', zIndex: '100' }}>
+				<ButtonBase onClick={open => setNavOpen(true)} disableRipple sx={{ position: 'absolute', right: 16, top: 16, width: '52px', height: '52px', color: '#eeeeef', background: 'none', zIndex: '100' }}>
 					<MenuIcon sx={{ width: '36px', height: '36px' }} />
 				</ButtonBase>
 			)}
@@ -233,7 +233,7 @@ function NavMenu({ step, setStep }) {
 											<Typography variant="h4">NAVIGATION</Typography>
 										</Grid>
 										<Grid item>
-											<ButtonBase onClick={open => setNavOpen(false)} sx={{ width: '52px', height: '52px', color: '#eeeeef', background: 'none' }}>
+											<ButtonBase onClick={open => setNavOpen(false)} disableRipple sx={{ width: '52px', height: '52px', color: '#eeeeef', background: 'none' }}>
 												<CloseIcon sx={{ width: '36px', height: '36px' }} />
 											</ButtonBase>
 										</Grid>
