@@ -133,12 +133,12 @@ function ProjectCard5() {
 						</Typography>
 						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px'}}>
 							<ul style={{ paddingTop: 0 }}>
-								<li>Real time order monitoring</li>
-								<li>Secure login authentication</li>
-								<li>Email contact form</li>
-								<li>Fast and secure Paypal Checkout</li>
-								<li>Agent job board for new orders</li>
-								<li>Intuitive rank selection</li>
+								<li>Real time order monitoring.</li>
+								<li>Secure login authentication.</li>
+								<li>Email contact form.</li>
+								<li>Fast and secure Paypal Checkout.</li>
+								<li>Agent job board for new orders.</li>
+								<li>Intuitive rank selection.</li>
 							</ul>
 						</Typography>
 					</Grid>

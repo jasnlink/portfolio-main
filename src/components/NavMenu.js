@@ -107,7 +107,7 @@ function NavMenu({ step, setStep }) {
 								classes={step ===2 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 								disableRipple 
 							>
-								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>FoodHub</strong> - Restaurant tableside scan to order system</Typography>} />
+								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>AYCEHub</strong> - Restaurant tableside scan to order system</Typography>} />
 							</ListItemButton>
 							<ListItemButton 
 								sx={{ pl: 3, color: '#c7c7c7'  }} 

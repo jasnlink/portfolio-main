@@ -92,7 +92,7 @@ function ProjectCard3() {
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
 							This app lets customers browse through the restaurant's menu and see what they have.
-							Customers get a summary of what they want to order that they can show to the cashier via a QR code. 
+							When customers place an order, a QR code is generated on their phone screen. They can then show the code to the cashier to let them know what they ordered.
 							This works well when the customer wants to start an order but the cashier is busy while also not letting the customer directly place an order either.
 						</Typography>
 					</Grid>
@@ -102,8 +102,23 @@ function ProjectCard3() {
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							I needed hosting that was fast and reliable, I decided to provision a VPS and install my own LAMP stack and installed Wordpress.
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
+							I needed to host the frontend and the backend on the same VPS.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px' }}>
+							I served the frontend on an NGINX web server with built static React files. The backend is a nodeJS server with Express middleware listening on a different port. The problem is that NGINX would interfere with API requests made to this port. I resolved this by setting up a proxy pass for API requests in the NGINX settings.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px' }}>
+							I needed way to let users manage their menu via an easy to use interface.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px' }}>
+							I created a CRUD interface to interact with the MySQL database. It also needed to be secured with a login authentication.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -112,7 +127,7 @@ function ProjectCard3() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Customers get an order summary and a QR code that they present to the cashier.
+							Customers get an order summary and a QR code that they present to the cashier. 
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -130,13 +145,33 @@ function ProjectCard3() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Javascript, MySQL, HTML, CSS, PHP, Wordpress, Apache, Linux
+							Javascript, React, Material UI, nodeJS, Express, MySQL, HTML, CSS, NGINX, Git, Linux
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Link href="https://msmtech.ca" underline="none" target="_blank">
+						<Typography variant="h3" sx={{ fontSize: '20px', mt: '20px' }}>
+							Features
+						</Typography>
+						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px'}}>
+							<ul style={{ paddingTop: 0 }}>
+								<li>Easy to navigate interactive menu, select and zoom to get more information on each product.</li>
+								<li>Cart system with order summary to easily summarize what we want to order.</li>
+								<li>Easily generate a QR code with order information to let staff know what you ordered.</li>
+								<li>Create, edit, reorder and remove items with the secured management backend.</li>
+							</ul>
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Link href="https://mitsuki.qbmenu.ca" underline="none" target="_blank">
 							<Button className="btn" fullWidth={!desktopMode} disableRipple>
 								See live demo
+							</Button>
+						</Link>
+					</Grid>
+					<Grid item xs={12}>
+						<Link href="https://github.com/jasnlink/interactive_menu" underline="none" target="_blank">
+							<Button className="btn-outline" fullWidth={!desktopMode} disableRipple>
+								View code on Github
 							</Button>
 						</Link>
 					</Grid>
