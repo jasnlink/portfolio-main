@@ -2,14 +2,23 @@
 body {
   margin: 0;
   color: #c7c7c7 !important;
+  font-family: 'Voces', cursive !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
-h6, h5 {
+h6, h5, h4, h3 {
   font-weight: 500;
+  font-family: 'Voces', cursive !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 .MuiTypography-body1 {
   color: #c7c7c7;
+  font-family: 'Voces', cursive !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 .nav-selected {
@@ -28,6 +37,9 @@ h6, h5 {
   padding: 12px 24px !important;
   font-weight: bold !important;
   width: 30%;
+  font-family: 'Voces', cursive !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 .btn:hover {
@@ -42,6 +54,9 @@ h6, h5 {
   padding: 12px 24px !important;
   font-weight: bold !important;
   width: 30%;
+  font-family: 'Voces', cursive !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 .btn-outline:hover {

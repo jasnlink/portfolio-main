@@ -78,7 +78,7 @@ function Welcome() {
 									</Grid>
 									<Grid item xs={12}>
 										<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
-											I am a <strong>full stack web developer</strong> with a specialization in <strong>Javascript and React</strong>.
+											I am a <strong>full stack web software developer</strong> with a specialization in <strong>Javascript and React</strong>.
 										</Typography>
 									</Grid>
 									<Grid item xs={12}>
