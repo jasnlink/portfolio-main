@@ -61,7 +61,7 @@ function Project({ id }) {
 	return (
 	<>
 
-			<Grid item sm={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
+			<Grid item xs={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
 				<Container maxWidth="lg" sx={{ pt: '12vh', pb: '12vh' }}>
 					<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414' }} elevation={0} square>
 						{id === 1 && (

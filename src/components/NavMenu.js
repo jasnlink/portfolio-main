@@ -52,6 +52,9 @@ import { useTheme } from '@mui/material/styles';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 import '../index.css';
 
@@ -59,7 +62,7 @@ import '../index.css';
 function NavMenu({ step, setStep }) {
 
 	const theme = useTheme()
-	const desktopMode = useMediaQuery(theme.breakpoints.up('sm'))
+	const desktopMode = useMediaQuery(theme.breakpoints.up('md'))
 
 	const [navOpen, setNavOpen] = useState(false)
 
@@ -76,7 +79,7 @@ function NavMenu({ step, setStep }) {
 				<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
 					<List>
 						<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px', cursor: 'default' }}>
-							<ListItemText primary={<Typography variant="h4">NAVIGATION</Typography>} />
+							<ListItemText primary={<Typography variant="h5" style={{ color: '#eeeeef' }}>NAVIGATION</Typography>} />
 						</ListItem>
 						<ListItemButton
 							selected={step === 0}
@@ -149,13 +152,18 @@ function NavMenu({ step, setStep }) {
 								>
 									<ListItemText primary={
 											<>
-												<Grid container spacing={1}>
-													<Grid item xs={6}>
-														<Typography>
-															Github
-														</Typography>
+												<Grid container spacing={1} alignItems="center">
+													<Grid container item xs={10} lg={6} spacing={1} alignItems="center">
+														<Grid item>
+															<GitHubIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} />
+														</Grid>
+														<Grid item>
+															<Typography>
+																Github
+															</Typography>
+														</Grid>
 													</Grid>
-													<Grid item xs={6}>
+													<Grid item xs={2} lg={6}>
 														<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
 													</Grid>
 												</Grid>
@@ -172,13 +180,18 @@ function NavMenu({ step, setStep }) {
 								>
 									<ListItemText primary={
 											<>
-												<Grid container spacing={1}>
-													<Grid item xs={6}>
-														<Typography>
-															LinkedIn
-														</Typography>
+												<Grid container spacing={1} alignItems="center">
+													<Grid container item xs={10} lg={6} spacing={1} alignItems="center">
+														<Grid item>
+															<LinkedInIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} />
+														</Grid>
+														<Grid item>
+															<Typography>
+																LinkedIn
+															</Typography>
+														</Grid>
 													</Grid>
-													<Grid item xs={6}>
+													<Grid item xs={2} lg={6}>
 														<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
 													</Grid>
 												</Grid>
@@ -195,13 +208,18 @@ function NavMenu({ step, setStep }) {
 								>
 									<ListItemText primary={
 											<>
-												<Grid container spacing={1}>
-													<Grid item xs={6}>
-														<Typography>
-															Twitter
-														</Typography>
+												<Grid container spacing={1} alignItems="center">
+													<Grid container item xs={10} lg={6} spacing={1} alignItems="center">
+														<Grid item>
+															<TwitterIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} />
+														</Grid>
+														<Grid item>
+															<Typography>
+																Twitter
+															</Typography>
+														</Grid>
 													</Grid>
-													<Grid item xs={6}>
+													<Grid item xs={2} lg={6}>
 														<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
 													</Grid>
 												</Grid>
@@ -224,13 +242,13 @@ function NavMenu({ step, setStep }) {
 				</ButtonBase>
 			)}
 				<Fade in={navOpen} timeout={{ appear: 10, enter: 400, exit: 400 }} unmountOnExit>
-					<Paper sx={{ position: 'absolute', zIndex: 10000, minHeight: '100vh', backgroundColor: '#141414', color: '#eeeeef' }} elevation={0} square>
+					<Paper sx={{ position: 'absolute', zIndex: 10000, minHeight: '100vh', minWidth: '100vw', backgroundColor: '#141414', color: '#eeeeef' }} elevation={0} square>
 						<List>
 							<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px', cursor: 'default' }}>
 								<ListItemText primary={
 									<Grid container alignItems="center" justifyContent="space-between">
 										<Grid item>
-											<Typography variant="h4">NAVIGATION</Typography>
+											<Typography variant="h4" style={{ color: '#eeeeef' }}>NAVIGATION</Typography>
 										</Grid>
 										<Grid item>
 											<ButtonBase onClick={open => setNavOpen(false)} disableRipple sx={{ width: '52px', height: '52px', color: '#eeeeef', background: 'none' }}>
@@ -312,10 +330,15 @@ function NavMenu({ step, setStep }) {
 										<ListItemText primary={
 												<>
 													<Grid container spacing={1}>
-														<Grid item>
-															<Typography>
+														<Grid item xs={4} sm={2} container spacing={1} alignItems="center">
+															<Grid item>
+																<GitHubIcon style={{ verticalAlign: 'middle' }} />
+															</Grid>
+															<Grid item>
+																<Typography>
 																Github
 															</Typography>
+															</Grid>
 														</Grid>
 														<Grid item>
 															<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
@@ -335,10 +358,15 @@ function NavMenu({ step, setStep }) {
 										<ListItemText primary={
 												<>
 													<Grid container spacing={1}>
-														<Grid item>
-															<Typography>
-																LinkedIn
-															</Typography>
+														<Grid item xs={4} sm={2} container spacing={1} alignItems="center">
+															<Grid item>
+																<LinkedInIcon style={{ verticalAlign: 'middle' }} />
+															</Grid>
+															<Grid item>
+																<Typography>
+																	LinkedIn
+																</Typography>
+															</Grid>
 														</Grid>
 														<Grid item>
 															<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
@@ -358,10 +386,15 @@ function NavMenu({ step, setStep }) {
 										<ListItemText primary={
 												<>
 													<Grid container spacing={1}>
-														<Grid item>
-															<Typography>
-																Twitter
-															</Typography>
+														<Grid item xs={4} sm={2} container spacing={1} alignItems="center">
+															<Grid item>
+																<TwitterIcon style={{ verticalAlign: 'middle' }} />
+															</Grid>
+															<Grid item>
+																<Typography>
+																	Twitter
+																</Typography>
+															</Grid>
 														</Grid>
 														<Grid item>
 															<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />

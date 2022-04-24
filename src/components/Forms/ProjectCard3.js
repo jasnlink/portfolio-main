@@ -58,7 +58,7 @@ import Image from './Image'
 function ProjectCard3() {
 
 	const theme = useTheme()
-	const desktopMode = useMediaQuery(theme.breakpoints.up('sm'))
+	const desktopMode = useMediaQuery(theme.breakpoints.up('md'))
 
 	return (
 	<>
