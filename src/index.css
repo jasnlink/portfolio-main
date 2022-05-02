@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   color: #c7c7c7 !important;
@@ -31,7 +30,7 @@ h6, h5, h4, h3 {
 }
 
 .nav-root:hover {
-  background-color: #b5b5b51c !important;
+  background-color: #c8c8c81c!important;
 }
 
 .btn {

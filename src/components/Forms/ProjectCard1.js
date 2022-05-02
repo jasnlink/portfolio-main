@@ -1,55 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react';
-
+import React from 'react';
 
 import { 	
-	Typography,
-	Container,
-	List,
-	ListItem,
-	ListItemButton,
-	ListItemIcon,
-	ListItemText,
-	ListItemSecondaryAction,
-	Divider,
-	AppBar,
-	Box,
-	Toolbar,
-	IconButton,
-	FormControl,
-	FilledInput,
-	OutlinedInput,
-	InputLabel,
-	InputAdornment,
-	FormHelperText,
-	Button,
-	TextField,
-	Input,
 	Grid,
-	Fade,
-	CircularProgress,
-	Drawer,
-	Paper,
-	Chip,
-	ToggleButton,
-	ToggleButtonGroup,
-	ButtonBase,
-	Alert,
-	Dialog,
-	DialogTitle,
-	DialogActions,
-	DialogContent,
-	Collapse,
-	Card,
-	CardActionArea,
-	Stack,
-	SvgIcon,
+	Typography,
+	Button,
 	Link,
 	useMediaQuery
  } from '@mui/material';
 
 import { useTheme } from '@mui/material/styles';
-
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import '../../index.css';
 
@@ -64,7 +23,6 @@ function ProjectCard1() {
 	return (
 	<>
 
-			<Card sx={{ backgroundColor: '#141414', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 6%' }} square>
 				<Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ mb: '20px' }}>
@@ -229,7 +187,6 @@ function ProjectCard1() {
 						</Link>
 					</Grid>
 				</Grid>
-			</Card>
 
 	</>
 	)

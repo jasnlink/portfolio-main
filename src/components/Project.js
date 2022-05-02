@@ -2,47 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 
 
 import { 	
-	Typography,
-	Container,
-	List,
-	ListItem,
-	ListItemButton,
-	ListItemIcon,
-	ListItemText,
-	ListItemSecondaryAction,
-	Divider,
-	AppBar,
-	Box,
-	Toolbar,
-	IconButton,
-	FormControl,
-	FilledInput,
-	OutlinedInput,
-	InputLabel,
-	InputAdornment,
-	FormHelperText,
-	Button,
-	TextField,
-	Input,
 	Grid,
-	Fade,
-	CircularProgress,
-	Drawer,
+	Container,
 	Paper,
-	Chip,
-	ToggleButton,
-	ToggleButtonGroup,
-	ButtonBase,
-	Alert,
-	Dialog,
-	DialogTitle,
-	DialogActions,
-	DialogContent,
-	Collapse,
 	Card,
-	CardActionArea,
-	Stack,
-	SvgIcon
  } from '@mui/material';
 
 import { LoadingButton } from '@mui/lab';
@@ -62,9 +25,10 @@ function Project({ id }) {
 	return (
 	<>
 
-			<Grid item xs={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
+			<Grid item xs={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#161616' }}>
 				<Container maxWidth="lg" sx={{ pt: '12vh', pb: '12vh' }}>
-					<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414' }} elevation={0} square>
+					<Paper sx={{ minHeight: '100vh', backgroundColor: 'inherit' }} elevation={0} square>
+						<Card sx={{ backgroundColor: '#262626', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 6%' }} square>
 						{id === 1 && (
 
 							<ProjectCard1 />
@@ -90,6 +54,7 @@ function Project({ id }) {
 							<ProjectCard5 />
 
 						)}
+						</Card>
 					</Paper>
 				</Container>
 			</Grid>

@@ -2,46 +2,17 @@ import React, { useState, useEffect, useRef } from 'react';
 
 
 import { 	
+	Grid,
+	Paper,
 	Typography,
 	Container,
 	List,
 	ListItem,
 	ListItemButton,
-	ListItemIcon,
 	ListItemText,
-	ListItemSecondaryAction,
 	Divider,
-	AppBar,
-	Box,
-	Toolbar,
-	IconButton,
-	FormControl,
-	FilledInput,
-	OutlinedInput,
-	InputLabel,
-	InputAdornment,
-	FormHelperText,
-	Button,
-	TextField,
-	Input,
-	Grid,
-	Fade,
-	CircularProgress,
-	Drawer,
-	Paper,
-	Chip,
-	ToggleButton,
-	ToggleButtonGroup,
 	ButtonBase,
-	Alert,
-	Dialog,
-	DialogTitle,
-	DialogActions,
-	DialogContent,
-	Collapse,
-	Card,
-	CardActionArea,
-	Stack,
+	Fade,
 	SvgIcon,
 	Link,
 	useMediaQuery
@@ -75,8 +46,8 @@ function NavMenu({ step, setStep }) {
 	<>
 		{desktopMode && (
 
-			<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'auto' }}>
-				<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
+			<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'none' }}>
+				<Paper sx={{ minHeight: '100vh', backgroundColor: '#262626', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
 					<List>
 						<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px', cursor: 'default' }}>
 							<ListItemText primary={<Typography variant="h5" style={{ color: '#eeeeef' }}>NAVIGATION</Typography>} />

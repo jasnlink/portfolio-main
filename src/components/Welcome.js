@@ -6,43 +6,11 @@ import {
 	Container,
 	List,
 	ListItem,
-	ListItemButton,
-	ListItemIcon,
-	ListItemText,
-	ListItemSecondaryAction,
 	Divider,
-	AppBar,
-	Box,
-	Toolbar,
-	IconButton,
-	FormControl,
-	FilledInput,
-	OutlinedInput,
-	InputLabel,
-	InputAdornment,
-	FormHelperText,
 	Button,
-	TextField,
-	Input,
 	Grid,
-	Fade,
-	CircularProgress,
-	Drawer,
 	Paper,
-	Chip,
-	ToggleButton,
-	ToggleButtonGroup,
-	ButtonBase,
-	Alert,
-	Dialog,
-	DialogTitle,
-	DialogActions,
-	DialogContent,
-	Collapse,
 	Card,
-	CardActionArea,
-	Stack,
-	SvgIcon,
 	Avatar,
 	Link
  } from '@mui/material';
@@ -58,11 +26,11 @@ function Welcome() {
 
 	return (
 	<>
-
+	
 			<Grid item xs={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
 				<Container maxWidth="sm" sx={{ pt: '12vh', pb: '12vh' }}>
-					<Paper sx={{ minHeight: '100vh', backgroundColor: '#141414' }} elevation={0} square>
-							<Card sx={{ backgroundColor: '#141414', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 10%' }} square>
+					<Paper sx={{ minHeight: '100vh', backgroundColor: 'inherit' }} elevation={0} square>
+							<Card sx={{ backgroundColor: '#262626', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 10%' }} square>
 								<Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
 									<Grid item xs={12}>
 										<Avatar
@@ -78,7 +46,7 @@ function Welcome() {
 									</Grid>
 									<Grid item xs={12}>
 										<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
-											I am a <strong class="p-strong">full stack web software developer</strong> with a specialization in <strong class="p-strong">Javascript and React</strong>.
+											I am a <strong className="p-strong">full stack web software developer</strong> with a specialization in <strong className="p-strong">Javascript and React</strong>.
 										</Typography>
 									</Grid>
 									<Grid item xs={12}>
