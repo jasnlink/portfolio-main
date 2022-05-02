@@ -15,7 +15,8 @@ import {
 	Fade,
 	SvgIcon,
 	Link,
-	useMediaQuery
+	useMediaQuery,
+	Switch
  } from '@mui/material';
 
 import { useTheme } from '@mui/material/styles';
@@ -49,18 +50,23 @@ function NavMenu({ step, setStep }) {
 			<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'none' }}>
 				<Paper sx={{ minHeight: '100vh', backgroundColor: '#262626', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
 					<List>
-						<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px', cursor: 'default' }}>
+						<ListItem sx={{ cursor: 'default' }}>
 							<ListItemText primary={<Typography variant="h5" style={{ color: '#eeeeef' }}>NAVIGATION</Typography>} />
 						</ListItem>
+
+						<Divider sx={{ backgroundColor: '#c3c3c33d' }} />
+
 						<ListItemButton
 							selected={step === 0}
 							onClick={() => setStep(0)}
 							classes={step ===0 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
-							sx={{ borderBottom: 'solid #c3c3c33d 1px' }}
 							disableRipple 
 						>
 							<ListItemText primary={<Typography variant="h6">Home</Typography>} />
 						</ListItemButton>
+
+						<Divider sx={{ backgroundColor: '#c3c3c33d' }} />
+
 						<ListItem sx={{ pb: 0, cursor: 'default' }}>
 							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Projects</Typography>} />
 						</ListItem>
@@ -111,7 +117,9 @@ function NavMenu({ step, setStep }) {
 								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>PrimeElo</strong> - Rank boosting service for League of Legends</Typography>} />
 							</ListItemButton>
 
-						<ListItem sx={{ borderTop: 'solid #c3c3c33d 1px', pb: 0, cursor: 'default' }}>
+						<Divider sx={{ backgroundColor: '#c3c3c33d' }} />
+
+						<ListItem sx={{ pb: 0, cursor: 'default' }}>
 							<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Connect with me</Typography>} />
 						</ListItem>
 
@@ -199,6 +207,33 @@ function NavMenu({ step, setStep }) {
 										
 								</ListItemButton>
 							</Link>
+							{/*
+							<Divider sx={{ backgroundColor: '#c3c3c33d' }} />
+
+							<ListItem sx={{ pb: 0, cursor: 'default' }}>
+								<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Settings</Typography>} />
+							</ListItem>
+
+							<ListItem sx={{ pl: 3 }}>
+								<Grid container alignItems="center">
+									<Grid item>
+										<Typography>
+											EN
+										</Typography>
+									</Grid>
+									<Grid item>
+										<Switch />
+									</Grid>
+									<Grid item>
+										<Typography>
+											FR
+										</Typography>
+									</Grid>
+								</Grid>
+							</ListItem>
+
+							*/}
+							
 
 					</List>
 				</Paper>
@@ -215,7 +250,7 @@ function NavMenu({ step, setStep }) {
 				<Fade in={navOpen} timeout={{ appear: 10, enter: 400, exit: 400 }} unmountOnExit>
 					<Paper sx={{ position: 'absolute', zIndex: 10000, minHeight: '100vh', minWidth: '100vw', backgroundColor: '#141414', color: '#eeeeef' }} elevation={0} square>
 						<List>
-							<ListItem sx={{ borderBottom: 'solid #c3c3c33d 1px', cursor: 'default' }}>
+							<ListItem sx={{ cursor: 'default' }}>
 								<ListItemText primary={
 									<Grid container alignItems="center" justifyContent="space-between">
 										<Grid item>
@@ -229,15 +264,21 @@ function NavMenu({ step, setStep }) {
 									</Grid>
 								} />
 							</ListItem>
+
+							<Divider sx={{ backgroundColor: '#c3c3c33d' }} />
+
 							<ListItemButton
 								selected={step === 0}
 								onClick={() => handleNavSelect(0)}
-								sx={{ borderBottom: 'solid #c3c3c33d 1px', pl: 4 }}
+								sx={{ pl: 4 }}
 								classes={step ===0 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 								disableRipple 
 							>
 								<ListItemText primary={<Typography variant="h6">Home</Typography>} />
 							</ListItemButton>
+
+							<Divider sx={{ backgroundColor: '#c3c3c33d' }} />
+
 							<ListItem sx={{ cursor: 'default', pl: 4 }}>
 								<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Projects</Typography>} />
 							</ListItem>
@@ -288,7 +329,9 @@ function NavMenu({ step, setStep }) {
 									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>PrimeElo</strong> - Rank boosting service for League of Legends</Typography>} />
 								</ListItemButton>
 
-							<ListItem sx={{ borderTop: 'solid #c3c3c33d 1px', pl: 4, cursor: 'default' }}>
+							<Divider sx={{ backgroundColor: '#c3c3c33d' }} />
+
+							<ListItem sx={{ pl: 4, cursor: 'default' }}>
 								<ListItemText primary={<Typography variant="h6" style={{ fontWeight: '500', color: '#eeeeef' }}>Connect with me</Typography>} />
 							</ListItem>
 
@@ -376,6 +419,7 @@ function NavMenu({ step, setStep }) {
 											
 									</ListItemButton>
 								</Link>
+
 
 						</List>
 					</Paper>
