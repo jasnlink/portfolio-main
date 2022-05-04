@@ -31,12 +31,10 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import '../index.css';
 
 
-function NavMenu({ step, setStep }) {
+function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 
 	const theme = useTheme()
 	const desktopMode = useMediaQuery(theme.breakpoints.up('md'))
-
-	const [navOpen, setNavOpen] = useState(false)
 
 	function handleNavSelect(sId) {
 		setStep(sId)
@@ -47,7 +45,7 @@ function NavMenu({ step, setStep }) {
 	<>
 		{desktopMode && (
 
-			<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'none' }}>
+			<Grid item xs={2} style={{ maxHeight: '100vh', overflow: 'auto' }}>
 				<Paper sx={{ minHeight: '100vh', backgroundColor: '#262626', borderRight: 'solid #c3c3c33d 1px', color: '#eeeeef' }} elevation={0} square>
 					<List>
 						<ListItem sx={{ cursor: 'default' }}>

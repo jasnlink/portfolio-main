@@ -11,6 +11,8 @@ function Core() {
 
 	//Application step var
 	const [step, setStep] = useState(0);
+	//navigation menu open/closed
+	const [navOpen, setNavOpen] = useState(false)
 
 
 	switch(step) {
@@ -22,8 +24,13 @@ function Core() {
 		    		<NavMenu
 		    			step={step}
 		    			setStep={step => setStep(step)}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
-		    		<Welcome />
+		    		<Welcome
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
+		    		 />
 		    	</Grid>
 	    	</>
 	      )
@@ -34,8 +41,14 @@ function Core() {
 		    		<NavMenu
 		    			step={step}
 		    			setStep={step => setStep(step)}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
-		    		<Project id={1} />
+		    		<Project 
+		    			id={1}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
+		    		 />
 		    	</Grid>
 	    	</>
 	      )
@@ -46,8 +59,14 @@ function Core() {
 		    		<NavMenu
 		    			step={step}
 		    			setStep={step => setStep(step)}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
-		    		<Project id={2} />
+		    		<Project 
+		    			id={2}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
+		    		/>
 		    	</Grid>
 	    	</>
 	      )
@@ -58,8 +77,14 @@ function Core() {
 		    		<NavMenu
 		    			step={step}
 		    			setStep={step => setStep(step)}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
-		    		<Project id={3} />
+		    		<Project 
+		    			id={3}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
+		    		/>
 		    	</Grid>
 	    	</>
 	      )
@@ -70,8 +95,14 @@ function Core() {
 		    		<NavMenu
 		    			step={step}
 		    			setStep={step => setStep(step)}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
-		    		<Project id={4} />
+		    		<Project 
+		    			id={4}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
+		    		/>
 		    	</Grid>
 	    	</>
 	      )
@@ -82,8 +113,14 @@ function Core() {
 		    		<NavMenu
 		    			step={step}
 		    			setStep={step => setStep(step)}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
-		    		<Project id={5} />
+		    		<Project 
+		    			id={5}
+		    			navOpen={navOpen}
+		    			setNavOpen={nav => setNavOpen(nav)}
+		    		/>
 		    	</Grid>
 	    	</>
 	      )

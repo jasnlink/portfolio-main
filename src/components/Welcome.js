@@ -12,24 +12,30 @@ import {
 	Paper,
 	Card,
 	Avatar,
-	Link
+	Link,
+	useMediaQuery
  } from '@mui/material';
 
 import { LoadingButton } from '@mui/lab';
 
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
+import { useTheme } from '@mui/material/styles';
+
 import '../index.css';
 
 
 function Welcome() {
 
+	const theme = useTheme()
+	const desktopMode = useMediaQuery(theme.breakpoints.up('md'))
+
 	return (
 	<>
 	
 			<Grid item xs={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#141414' }}>
-				<Container maxWidth="sm" sx={{ pt: '12vh', pb: '12vh' }}>
-					<Paper sx={{ minHeight: '100vh', backgroundColor: 'inherit' }} elevation={0} square>
+				<Container maxWidth="sm" sx={{ mt: '12vh', mb: '12vh', minHeight: '76vh' }}>
+					<Paper sx={{ minHeight: '76vh', backgroundColor: 'inherit' }} elevation={0} square>
 							<Card sx={{ backgroundColor: '#262626', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 10%' }} square>
 								<Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
 									<Grid item xs={12}>
