@@ -246,7 +246,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 				</ButtonBase>
 			)}
 				<Fade in={navOpen} timeout={{ appear: 10, enter: 400, exit: 400 }} unmountOnExit>
-					<Paper sx={{ position: 'absolute', zIndex: 10000, minHeight: '100vh', minWidth: '100vw', backgroundColor: '#141414', color: '#eeeeef' }} elevation={0} square>
+					<Paper sx={{ position: 'absolute', overflow: 'auto', zIndex: 10000, minHeight: '100vh', maxHeight: '100vh', minWidth: '100vw', maxWidth: '100vw', backgroundColor: '#141414', color: '#eeeeef' }} elevation={0} square>
 						<List>
 							<ListItem sx={{ cursor: 'default' }}>
 								<ListItemText primary={

@@ -16,7 +16,7 @@ import '../../index.css'
 function Image({ src, alt, direction='horizontal' }) {
 
 	const theme = useTheme()
-	const desktopMode = useMediaQuery(theme.breakpoints.up('sm'))
+	const desktopMode = useMediaQuery(theme.breakpoints.up('md'))
 
 	const [lightboxOpen, setLightboxOpen] = useState(false)
 
@@ -28,7 +28,7 @@ function Image({ src, alt, direction='horizontal' }) {
 			<>
 				<img style={{ position: 'relative', width: '80%', cursor: 'pointer' }} src={src} alt={alt} onClick={() => setLightboxOpen(true)} />
 
-				<Fade in={lightboxOpen}>
+				<Fade in={lightboxOpen} unmountOnExit>
 						<div style={{ 
 										backgroundColor: '#000000d9', 
 										zIndex: 9998, 
@@ -73,7 +73,7 @@ function Image({ src, alt, direction='horizontal' }) {
 			<>
 				<img style={{ position: 'relative', width: '30%', paddingRight: '12px', cursor: 'pointer' }} src={src} alt={alt} onClick={() => setLightboxOpen(true)} />
 
-				<Fade in={lightboxOpen}>
+				<Fade in={lightboxOpen} unmountOnExit>
 					<div style={{ 
 									backgroundColor: '#000000d9', 
 									zIndex: 9998, 

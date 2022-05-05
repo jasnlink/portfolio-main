@@ -30,37 +30,35 @@ function Project({ id, navOpen, setNavOpen }) {
 	return (
 	<>
 
-			<Grid item xs={12} md={10} style={{ maxHeight: '100vh', overflow: 'auto', backgroundColor: '#161616' }}>
-				<Container maxWidth="lg" sx={{ mt: '12vh', mb: '12vh', minHeight: '76vh' }}>
-					<Paper sx={{ minHeight: '76vh', backgroundColor: 'inherit' }} elevation={0} square>
-						<Card sx={{ backgroundColor: '#262626', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 6%' }} square>
-						{id === 1 && (
+			<Grid item xs={12} md={10} style={desktopMode ? { minHeight: '100vh', height: '100vh', maxHeight: '100vh', overflow: 'auto', backgroundColor: '#161616' } : { minHeight: '100vh', height: '100vh', maxHeight: '100vh', overflow: 'auto', backgroundColor: '#161616' }}>
+				<Container maxWidth="lg" sx={desktopMode ? { mt: '12vh', mb: '12vh', minHeight: '76vh', overflow: 'hidden' } : { mt: '12vh', mb: '24vh', minHeight: '64vh', overflow: 'hidden' }}>
+					<Card sx={{ backgroundColor: '#262626', border: 'solid #c3c3c33d 1px', color: '#eeeeef', p: '10% 6%' }} square>
+					{id === 1 && (
 
-							<ProjectCard1 />
+						<ProjectCard1 />
 
-						)}
-						{id === 2 && (
+					)}
+					{id === 2 && (
 
-							<ProjectCard2 />
+						<ProjectCard2 />
 
-						)}
-						{id === 3 && (
+					)}
+					{id === 3 && (
 
-							<ProjectCard3 />
+						<ProjectCard3 />
 
-						)}
-						{id === 4 && (
+					)}
+					{id === 4 && (
 
-							<ProjectCard4 />
+						<ProjectCard4 />
 
-						)}
-						{id === 5 && (
+					)}
+					{id === 5 && (
 
-							<ProjectCard5 />
+						<ProjectCard5 />
 
-						)}
-						</Card>
-					</Paper>
+					)}
+					</Card>
 				</Container>
 			</Grid>
 
