@@ -74,7 +74,7 @@ function Welcome() {
 								</List>
 							</Grid>
 							<Grid item xs={12} sx={{ mt: 2 }}>
-								<Link href="https://msmtech.ca/wp-content/uploads/2022/04/Jason-Che_CV-en-v11.pdf" underline="none" target="_blank">
+								<Link href="https://msmtech.ca/wp-content/uploads/2022/09/Jason-Che_CV-en-v13.pdf" underline="none" target="_blank">
 									<Button className="btn" disableRipple fullWidth>
 										See my resume
 									</Button>

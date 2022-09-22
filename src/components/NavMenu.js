@@ -130,7 +130,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 									<ListItemText primary={
 											<>
 												<Grid container spacing={1} alignItems="center">
-													<Grid container item xs={10} lg={6} spacing={1} alignItems="center">
+													<Grid container item xs={10} md={8} lg={8} xl={6} spacing={1} alignItems="center">
 														<Grid item>
 															<GitHubIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} />
 														</Grid>
@@ -140,7 +140,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 															</Typography>
 														</Grid>
 													</Grid>
-													<Grid item xs={2} lg={6}>
+													<Grid item xs={2} md={4} lg={4} xl={6}>
 														<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
 													</Grid>
 												</Grid>
@@ -158,7 +158,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 									<ListItemText primary={
 											<>
 												<Grid container spacing={1} alignItems="center">
-													<Grid container item xs={10} lg={6} spacing={1} alignItems="center">
+													<Grid container item xs={10} md={8} lg={8} xl={6} spacing={1} alignItems="center">
 														<Grid item>
 															<LinkedInIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} />
 														</Grid>
@@ -168,7 +168,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 															</Typography>
 														</Grid>
 													</Grid>
-													<Grid item xs={2} lg={6}>
+													<Grid item xs={2} md={4} lg={4} xl={6}>
 														<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
 													</Grid>
 												</Grid>
@@ -186,7 +186,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 									<ListItemText primary={
 											<>
 												<Grid container spacing={1} alignItems="center">
-													<Grid container item xs={10} lg={6} spacing={1} alignItems="center">
+													<Grid container item xs={10} md={8} lg={8} xl={6} spacing={1} alignItems="center">
 														<Grid item>
 															<TwitterIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} />
 														</Grid>
@@ -196,7 +196,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 															</Typography>
 														</Grid>
 													</Grid>
-													<Grid item xs={2} lg={6}>
+													<Grid item xs={2} md={4} lg={4} xl={6}>
 														<OpenInNewIcon style={{ verticalAlign: 'middle', marginBottom: '2px' }} fontSize="small" />
 													</Grid>
 												</Grid>
