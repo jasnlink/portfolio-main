@@ -52,7 +52,7 @@ function Core() {
 		    	</Grid>
 	    	</>
 	      )
-	  case 2:
+	  default:
 	    return (
 	    	<>
 	    		<Grid container>
@@ -63,67 +63,14 @@ function Core() {
 		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
 		    		<Project 
-		    			id={2}
+		    			id={step}
 		    			navOpen={navOpen}
 		    			setNavOpen={nav => setNavOpen(nav)}
 		    		/>
 		    	</Grid>
 	    	</>
 	      )
-	  case 3:
-	    return (
-	    	<>
-	    		<Grid container>
-		    		<NavMenu
-		    			step={step}
-		    			setStep={step => setStep(step)}
-		    			navOpen={navOpen}
-		    			setNavOpen={nav => setNavOpen(nav)}
-		    		/>
-		    		<Project 
-		    			id={3}
-		    			navOpen={navOpen}
-		    			setNavOpen={nav => setNavOpen(nav)}
-		    		/>
-		    	</Grid>
-	    	</>
-	      )
-	  case 4:
-	    return (
-	    	<>
-	    		<Grid container>
-		    		<NavMenu
-		    			step={step}
-		    			setStep={step => setStep(step)}
-		    			navOpen={navOpen}
-		    			setNavOpen={nav => setNavOpen(nav)}
-		    		/>
-		    		<Project 
-		    			id={4}
-		    			navOpen={navOpen}
-		    			setNavOpen={nav => setNavOpen(nav)}
-		    		/>
-		    	</Grid>
-	    	</>
-	      )
-	  case 5:
-	    return (
-	    	<>
-	    		<Grid container>
-		    		<NavMenu
-		    			step={step}
-		    			setStep={step => setStep(step)}
-		    			navOpen={navOpen}
-		    			setNavOpen={nav => setNavOpen(nav)}
-		    		/>
-		    		<Project 
-		    			id={5}
-		    			navOpen={navOpen}
-		    			setNavOpen={nav => setNavOpen(nav)}
-		    		/>
-		    	</Grid>
-	    	</>
-	      )
+
 	}
 
 }

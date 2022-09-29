@@ -76,7 +76,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 								classes={step ===1 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 								disableRipple 
 							>
-								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MealPortal</strong> - Online pickup, delivery ordering software</Typography>} />
+								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>realPOS</strong> - Electron.js wrapped Desktop POS software</Typography>} />
 							</ListItemButton>
 							<ListItemButton 
 								sx={{ pl: 3, color: '#c7c7c7'  }} 
@@ -85,7 +85,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 								classes={step ===2 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 								disableRipple 
 							>
-								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>AYCEHub</strong> - All you can eat restaurant tableside scan to order system</Typography>} />
+								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MealPortal</strong> - Online pickup, delivery ordering software</Typography>} />
 							</ListItemButton>
 							<ListItemButton 
 								sx={{ pl: 3, color: '#c7c7c7'  }} 
@@ -94,7 +94,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 								classes={step ===3 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 								disableRipple 
 							>
-								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>SimpleMenu</strong> - Interactive menu with order management for pickups</Typography>} />
+								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>AYCEHub</strong> - All you can eat restaurant tableside scan to order system</Typography>} />
 							</ListItemButton>
 							<ListItemButton 
 								sx={{ pl: 3, color: '#c7c7c7'  }} 
@@ -103,13 +103,22 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 								classes={step ===4 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 								disableRipple 
 							>
-								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MSM Technologies</strong> - Web development company</Typography>} />
+								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>SimpleMenu</strong> - Interactive menu with order management for pickups</Typography>} />
 							</ListItemButton>
 							<ListItemButton 
 								sx={{ pl: 3, color: '#c7c7c7'  }} 
 								selected={step === 5}
 								onClick={() => setStep(5)}
 								classes={step ===5 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+								disableRipple 
+							>
+								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MSM Technologies</strong> - Web development company</Typography>} />
+							</ListItemButton>
+							<ListItemButton 
+								sx={{ pl: 3, color: '#c7c7c7'  }} 
+								selected={step === 6}
+								onClick={() => setStep(6)}
+								classes={step ===6 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 								disableRipple 
 							>
 								<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>PrimeElo</strong> - Rank boosting service for League of Legends</Typography>} />
@@ -288,7 +297,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 									classes={step ===1 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 									disableRipple 
 								>
-									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MealPortal</strong> - Online pickup, delivery ordering software</Typography>} />
+									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>realPOS</strong> - Electron.js wrapped Desktop POS software</Typography>} />
 								</ListItemButton>
 								<ListItemButton 
 									sx={{ pl: 6, pr: 6, color: '#c7c7c7'  }} 
@@ -297,7 +306,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 									classes={step ===2 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 									disableRipple 
 								>
-									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>FoodHub</strong> - Restaurant tableside scan to order system</Typography>} />
+									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MealPortal</strong> - Online pickup, delivery ordering software</Typography>} />
 								</ListItemButton>
 								<ListItemButton 
 									sx={{ pl: 6, pr: 6, color: '#c7c7c7'  }} 
@@ -306,7 +315,7 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 									classes={step ===3 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 									disableRipple 
 								>
-									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>SimpleMenu</strong> - Interactive menu with order management for pickups</Typography>} />
+									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>FoodHub</strong> - Restaurant tableside scan to order system</Typography>} />
 								</ListItemButton>
 								<ListItemButton 
 									sx={{ pl: 6, pr: 6, color: '#c7c7c7'  }} 
@@ -315,13 +324,22 @@ function NavMenu({ step, setStep, navOpen, setNavOpen }) {
 									classes={step ===4 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 									disableRipple 
 								>
-									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MSM Technologies</strong> - Web development company</Typography>} />
+									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>SimpleMenu</strong> - Interactive menu with order management for pickups</Typography>} />
 								</ListItemButton>
 								<ListItemButton 
 									sx={{ pl: 6, pr: 6, color: '#c7c7c7'  }} 
 									selected={step === 5}
 									onClick={() => handleNavSelect(5)}
 									classes={step ===5 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
+									disableRipple 
+								>
+									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>MSM Technologies</strong> - Web development company</Typography>} />
+								</ListItemButton>
+								<ListItemButton 
+									sx={{ pl: 6, pr: 6, color: '#c7c7c7'  }} 
+									selected={step === 6}
+									onClick={() => handleNavSelect(6)}
+									classes={step ===6 ? { selected: 'nav-selected' } : { root: 'nav-root', selected: 'nav-selected' }}
 									disableRipple 
 								>
 									<ListItemText sx={{ color: 'inherit' }} primary={<Typography color="inherit"><strong>PrimeElo</strong> - Rank boosting service for League of Legends</Typography>} />

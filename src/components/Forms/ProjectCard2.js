@@ -13,10 +13,12 @@ import { useTheme } from '@mui/material/styles';
 import '../../index.css';
 
 import Image from './Image'
+
 function ProjectCard2() {
 
 	const theme = useTheme()
 	const desktopMode = useMediaQuery(theme.breakpoints.up('md'))
+
 
 	return (
 	<>
@@ -24,11 +26,12 @@ function ProjectCard2() {
 				<Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ mb: '20px' }}>
-							AYCEHub - 2021
+							MealPortal - 2022
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/AnimationFull1.gif" alt="foodhub" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/2-5.jpg" alt="mealportal" direction="vertical" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/8-3.jpg" alt="meal portal" direction="vertical" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="h3" sx={{ fontSize: '20px', mt: '20px' }}>
@@ -37,7 +40,7 @@ function ProjectCard2() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							All you can eat restaurants need a way for customers order food and send it directly to the kitchen.
+							The client needed a modern approach to receive and manage online pickup and delivery orders.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -47,17 +50,17 @@ function ProjectCard2() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
-							This app allows customers to scan a QR code at the table and start ordering. When the order is placed, the order is printed directly in the kitchen.
+							Customers login with an one-time passcode via their emails and can place online food orders to the restaurant. The software recognizes the returning user by saving a JWT token after they have verified their emails so they don't have to retype their information.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px' }}>
-							This solution removes the need to use paper checklists to capture orders and reduces the amount of staff needed to run the restaurant.
+							New users can simply autocomplete their addresses with the Google Maps Address autocomplete.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px' }}>
-							This is a better and lower cost solution to using tablets at every table with the advent of COVID.
+							Restaurant staff can manage orders placed through the backend. They can create, edit, reorder, and remove menu categories, products and product options. They can choose the specific times each category will be displayed at. They can decide delivery fees, order minimum and delivery distance for their orders.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -67,37 +70,81 @@ function ProjectCard2() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px' }}>
-							I needed a way to bridge orders placed on the web app to local thermal printers.
+							I needed a way to authenticate and remember customers. I did not want users to have to create an account before they have placed an order because this interrupts the user flow and wastes system resources if the user doesn't place an order.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px' }}>
+							I opted for JSON web tokens to sign and verify authentication because it is a known secure standard. I remember the user with their email and confirm that they actually own the email with a one-time passcode system that issues time-sensitive passcodes to their email.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px' }}>
+							I needed a way to handle online payments, I decided to connect with the Paypal Payment API because it is a recognisable brand. I also opted for Stripe to handle credit card payments because credit card processing security compliance requires too much resources.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px' }}>
-							I used a local machine running a nodeJS server that listens for socket.io requests from the web app's backend. The local machine receives the orders placed and then sends them to be printed on thermal printers in the kitchen.
+							I needed a way to nofify the staff backend of new incoming orders in realtime. I decided to send the order from the frontend React app to the backend NodeJS server via a POST request. The backend server then inserts the orders and payment details to the MySQL database and then sends the order to the staff React frontend with socket.io.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/4-2.jpg" alt="menu" direction="vertical" />
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/2-3.jpg" alt="menu" direction="vertical" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/3-6.jpg" alt="mealportal" direction="vertical" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/4-4.jpg" alt="meal portal" direction="vertical" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Customer view after scanning the QR code.
+							Email one-time passcode authentication
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/2-2.jpg" alt="order management" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/6-3.jpg" alt="mealportal" direction="vertical" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/5-3.jpg" alt="meal portal" direction="vertical" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Order management screen to see what each table ordered.
+							Order time selection and Google Maps API address autocomplete.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/1-2.jpg" alt="table management" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/11-2.jpg" alt="mealportal" direction="vertical" />
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/13.jpg" alt="meal portal" direction="vertical" />
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Table management system to manage orders and QR codes assigned.
+							Placing an order and paying for it.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/2-4.jpg" alt="message" />
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
+							Order management backend.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/5-2.jpg" alt="message" />
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
+							Menu customization dialog.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/8-2.jpg" alt="message" />
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
+							Menu schedule planning tool.
+						</Typography>
+					</Grid>
+					<Grid item xs={12}>
+						<Image src="https://msmtech.ca/wp-content/uploads/2022/04/9.jpg" alt="message" />
+					</Grid>
+					<Grid item xs={12}>
+						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
+							Restaurant delivery zone fees and distance planning tool.
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -107,7 +154,7 @@ function ProjectCard2() {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography variant="body1" sx={{ fontSize: '20px', mt: '20px', mb: '20px' }}>
-							Javascript, React, Material UI, nodeJS, Express, MySQL, HTML, CSS, NGINX, Git, Linux
+							Javascript, React, Material UI, REST API, JSON web token authentication, Google Maps Javascript API, Paypal Payment SDK, Stripe Payment Gateway, NodeJS, MySQL, HTML, CSS, NGINX, Linux
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
@@ -116,23 +163,24 @@ function ProjectCard2() {
 						</Typography>
 						<Typography variant="body1" sx={{ fontSize: '20px', mb: '20px'}}>
 							<ul style={{ paddingTop: 0 }}>
-								<li>Included QR code scanner on the web app.</li>
-								<li>Conveniently assign QR codes and print them to each table with the table management system.</li>
-								<li>Easily navigate the menu and place orders to be placed. </li>
-								<li>Magically send orders straight to the kitchen, removing the need for paper checklists and reducing the number of staff needed.</li>
-								<li>Create, edit, reorder and remove items with the management backend.</li>
+								<li>Easy to use UI for customers and staff for order placement and order management.</li>
+								<li>Secure and convenient user recognition and authentication with locally stored JWT tokens and one-time passcode system.</li>
+								<li>Eliminate wrong delivery addresses for orders with Google Maps Address autocomplete.</li>
+								<li>Realtime order management with socket.io technology.</li>
+								<li>Fully customize your menu categories, products and product options.</li>
+								<li>Control menu hours, delivery zones, delivery fees, and order minimums.</li>
 							</ul>
 						</Typography>
 					</Grid>
 					<Grid item xs={12}>
-						<Link href="https://arandesign.ca/table/110/52" underline="none" target="_blank">
+						<Link href="https://staging.2kfusion.com/app" underline="none" target="_blank">
 							<Button className="btn" fullWidth={!desktopMode} disableRipple>
 								See live demo
 							</Button>
 						</Link>
 					</Grid>
 					<Grid item xs={12}>
-						<Link href="https://github.com/jasnlink/qr_order" underline="none" target="_blank">
+						<Link href="https://github.com/jasnlink/pickup_delivery_system" underline="none" target="_blank">
 							<Button className="btn-outline" fullWidth={!desktopMode} disableRipple>
 								View code on Github
 							</Button>

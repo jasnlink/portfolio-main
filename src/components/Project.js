@@ -21,6 +21,7 @@ import ProjectCard2 from './Forms/ProjectCard2'
 import ProjectCard3 from './Forms/ProjectCard3'
 import ProjectCard4 from './Forms/ProjectCard4'
 import ProjectCard5 from './Forms/ProjectCard5'
+import ProjectCard6 from './Forms/ProjectCard6'
 
 function Project({ id, navOpen, setNavOpen }) {
 
@@ -56,6 +57,11 @@ function Project({ id, navOpen, setNavOpen }) {
 					{id === 5 && (
 
 						<ProjectCard5 />
+
+					)}
+					{id === 6 && (
+
+						<ProjectCard6 />
 
 					)}
 					</Card>
